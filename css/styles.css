@@ -12,20 +12,28 @@
 
 /* вторичный цвет фона #f5f4fA; */
 
+/* Цвет Футера #2F303A */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-  --accent-text-color: #2196f3;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
   --logo-text-color: #000000;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --footer-info: rgba(255, 255, 255, 0.6);
+  --footer-copyright-color: rgba(255, 255, 255, 0.4);
 }
 
 .page {
-  background-color: #ffffff;
+  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 }
 
 .logo-web {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .logo-studio {
@@ -43,7 +51,11 @@
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .nav-info .link {
@@ -52,9 +64,45 @@
 
 .nav-info .link:hover,
 .nav-info .link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .section-text {
   color: var(--secondary-text-color);
+}
+
+/* Team */
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-text {
+  color: var(--white-color);
+}
+
+.footer-info {
+  color: var(--footer-info);
+}
+
+.footer-copyright {
+  color: var(--footer-copyright-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
