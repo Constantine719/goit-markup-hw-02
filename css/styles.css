@@ -93,6 +93,7 @@ a {
 /* Герой */
 
 .main-title {
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,12 +101,27 @@ a {
   color: var(--white-color);
 }
 
+/* 
 .button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   color: var(--white-color);
   background: var(--accent-color);
+}
+ */
+
+.main-button {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.main-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* Преимущества */
@@ -193,9 +209,10 @@ a {
 }
 
 .footer-text {
+  text-transform: uppercase;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -203,9 +220,10 @@ a {
 }
 
 .footer-info {
+  text-transform: uppercase;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -224,16 +242,29 @@ a {
 
 /* portfolio.html */
 
-.button-filters {
+.button {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--secondary-background-color);
 }
 
-.our-work-invisible {
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.works-invisible {
   color: var(--white-color);
 }
 
